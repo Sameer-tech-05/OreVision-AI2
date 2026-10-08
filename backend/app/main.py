@@ -38,7 +38,7 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "https://orevision-ai2-2.onrender.com",
     ],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
