@@ -12,9 +12,12 @@
 // - Prospectivity overlay
 // - Model performance
 
-const API_BASE_URL =
+
+const API_BASE_URL = (
   import.meta.env.VITE_API_BASE_URL ||
-  'https://orevision-ai-1.onrender.com/api'
+  'https://orevision-ai.onrender.com/api'
+).replace(/\/+$/, '')
+
 
 class ApiError extends Error {
   constructor(message, status, detail) {
