@@ -15,9 +15,8 @@
 
 const API_BASE_URL = (
   import.meta.env.VITE_API_BASE_URL ||
-  'https://orevision-ai.onrender.com/api'
+  'http://127.0.0.1:8000/api'
 ).replace(/\/+$/, '')
-
 
 class ApiError extends Error {
   constructor(message, status, detail) {
