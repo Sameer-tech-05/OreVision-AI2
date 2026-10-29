@@ -15,7 +15,7 @@
 
 const API_BASE_URL = (
   import.meta.env.VITE_API_BASE_URL ||
-  'https://orevision-ai-backend-new.onrender.com'
+  'https://orevision-ai-backend-new.onrender.com/api'
 ).replace(/\/+$/, '')
 
 class ApiError extends Error {
